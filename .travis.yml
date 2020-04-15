@@ -21,4 +21,3 @@ jobs:
       script:
         - yarn expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - yarn expo publish --non-interactive
-        
