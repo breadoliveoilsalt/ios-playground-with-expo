@@ -37,7 +37,7 @@ export default function HomeScreen() {
 
           <Text style={styles.getStartedText}>
             TRAVIS DEPLOYED THIS AFTER TESTS PASSED.
-            THIS SHOULD ONLY APPEAR IF MERGED INTO MASTER. ATTEMPT 2
+            THIS SHOULD ONLY APPEAR IF MERGED INTO MASTER. ATTEMPT 3
           </Text>
         </View>
 

@@ -12,12 +12,6 @@ install:
 before_script:
   - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-stages:
-  - test
-  - name: deploy 
-    if: branch = master
-
-
 jobs:
   include:
     - stage: test
@@ -27,3 +21,8 @@ jobs:
       script:
         - yarn expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - yarn expo publish --non-interactive
+
+stages:
+  - test
+  - name: deploy 
+    if: (NOT type IN (pull_request)) AND (branch = master)
