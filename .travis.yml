@@ -12,11 +12,11 @@ install:
 before_script:
   - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
-script:
-  - yarn test -- --watchAll=false
-
 jobs:
   include:
+    - stage: test
+      script: 
+        - yarn test -- --watchAll=false
     - stage: deploy
       script:
         - yarn expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
