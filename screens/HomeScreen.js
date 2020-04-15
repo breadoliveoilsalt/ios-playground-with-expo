@@ -35,10 +35,10 @@ export default function HomeScreen() {
             This is to test that Travis deployed something!
           </Text>
 
-          <Text style={styles.getStartedText}>
+          <Text testID="attempts" style={styles.getStartedText}>
             TRAVIS DEPLOYED THIS AFTER TESTS PASSED.
             THIS SHOULD ONLY APPEAR IF MERGED INTO MASTER. ATTEMPT 3
-            
+
           </Text>
         </View>
 
