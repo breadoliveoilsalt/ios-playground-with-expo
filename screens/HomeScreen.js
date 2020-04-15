@@ -32,7 +32,7 @@ export default function HomeScreen() {
           <Text style={styles.getStartedText}>
             Change any of the text, save the file, and your app will automatically reload.
             I am changing the text.  Do you see these changes?  ARE THEY THERE??
-
+            This is to test that Travis deployed something!
           </Text>
         </View>
 
