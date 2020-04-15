@@ -6,10 +6,13 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test:plain": "jest"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": ["./setup-tests.js"],
+    "restoreMocks": true
   },
   "dependencies": {
     "@expo/vector-icons": "~10.0.6",
