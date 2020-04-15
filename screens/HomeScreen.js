@@ -34,6 +34,10 @@ export default function HomeScreen() {
             I am changing the text.  Do you see these changes?  ARE THEY THERE??
             This is to test that Travis deployed something!
           </Text>
+
+          <Text style={styles.getStartedText}>
+            TRAVIS DEPLOYED THIS AFTER TESTS PASSED.
+          </Text>
         </View>
 
         <View style={styles.helpContainer}>
